@@ -4,3 +4,9 @@ body {
        */
     font: 100%/1.5 system-ui;
 }
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
