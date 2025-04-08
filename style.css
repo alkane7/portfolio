@@ -1,3 +1,8 @@
+:root {
+  --color-accent: oklch(65% 0.56 0); 
+  accent-color: var(--color-accent); 
+}
+
 body {
   font: 100%/1.5 system-ui;
   max-width: 100ch;
@@ -16,38 +21,40 @@ nav {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0 0 1.5rem 0; 
-  border-bottom: 1px solid oklch(80% 3% 200); 
+  margin: 0 0 1.5rem 0;
+  border-bottom: 1px solid oklch(80% 0.03 200);
 }
 
 nav a {
   flex: 1;
   text-align: center;
-  padding: 0.5em; 
-  text-decoration: none; 
-  color: inherit; 
-  transition: all 0.3s ease; 
+  padding: 0.5em;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
   position: relative;
-  margin-bottom: -1px; 
+  margin-bottom: -1px;
 }
 
 
 nav a.current {
   font-weight: bold;
-  border-bottom: 0.4em solid oklch(80% 3% 200);
-  padding-bottom: calc(0.5em - 0.4em);
+  border-bottom: 0.4em solid oklch(85% 0.03 200);
+  padding-bottom: 0.1em;
 }
 
 
 nav a:hover {
-  background-color: oklch(80% 3% 200); 
+  background-color: oklch(from var(--color-accent) 95% 5% h); 
+  border-bottom: 0.4em solid var(--color-accent); 
+  padding-bottom: 0.1em; 
 }
 
 
 nav a:not(.current) {
-  border-bottom: 1px solid transparent; 
+  border-bottom: 1px solid transparent;
 }
 
 nav a:not(.current):hover {
-  border-bottom-color: oklch(80% 3% 200); 
+  border-bottom: 0.4em solid var(--color-accent); 
 }
