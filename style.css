@@ -17,7 +17,7 @@ nav {
   list-style: none;
   padding: 0;
   margin: 0 0 1.5rem 0; 
-  border-bottom: 1px solid oklch(80% 0.03 200); 
+  border-bottom: 1px solid oklch(80% 3% 200); 
 }
 
 nav a {
@@ -34,13 +34,13 @@ nav a {
 
 nav a.current {
   font-weight: bold;
-  border-bottom: 0.4em solid oklch(85% 0.03 200);
+  border-bottom: 0.4em solid oklch(80% 3% 200);
   padding-bottom: calc(0.5em - 0.4em);
 }
 
 
 nav a:hover {
-  background-color: oklch(95% 0.01 200); 
+  background-color: oklch(80% 3% 200); 
 }
 
 
@@ -49,5 +49,5 @@ nav a:not(.current) {
 }
 
 nav a:not(.current):hover {
-  border-bottom-color: oklch(80% 0.03 200); 
+  border-bottom-color: oklch(80% 3% 200); 
 }
