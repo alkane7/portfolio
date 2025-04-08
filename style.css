@@ -59,7 +59,7 @@ nav a:not(.current):hover {
   border-bottom: 0.4em solid var(--color-accent); 
 }
 
-label {
+/* label {
   display: block;          
   margin-block: 0.5em; 
 }    
@@ -71,4 +71,4 @@ select {
   width: 100%;            
   box-sizing: border-box;  
   margin-block-end: 1em;  
-}
+} */
