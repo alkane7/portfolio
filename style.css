@@ -19,9 +19,23 @@ button {
 form {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 0.5rem 1rem; 
+  gap: 1rem 1rem; 
+}
+
+
+form label {
+  display: grid;
+  grid-template-columns: subgrid;
+  column-gap: 1rem; 
   align-items: center;
 }
+
+
+form button {
+  grid-column: 1 / -1;
+  justify-self: start; 
+}
+
 
 
 .container {
