@@ -16,18 +16,21 @@
     </nav> 
     <h1>Contact</h1>
     <form action="mailto:lisusan1104@gmail.com" method="GET" enctype="text/plain">
-  
-        <label for="email">Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <label>
+          Email:
+          <input type="email" id="email" name="email">
+        </label>
+        <label>
+          Subject:
+          <input type="text" id="subject" name="subject">
+        </label>
+        <label>
+          Message:
+          <textarea id="message" name="body"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
       
-        <label for="subject">Subject:</label><br>
-        <input name="subject"><br><br>
-      
-        <label for="body">Body:</label><br>
-        <textarea name="body" rows="5" cols="30"></textarea><br><br>
-      
-        <button>Submit</button>
-    </form>
       
 </body>
 </html>
