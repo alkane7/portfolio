@@ -104,7 +104,13 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: color-mix(in oklch, var(--color-accent), canvas 65%); 
+  border: none;                       
+  border-radius: 0.5em;              
+  transition: background-color 0.3s ease;
 }
+
 
 .projects {
   display: grid;

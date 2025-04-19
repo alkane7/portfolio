@@ -77,3 +77,16 @@ select.addEventListener('input', function (event) {
 if ('colorScheme' in localStorage) {
   setColorScheme(localStorage.colorScheme);
 }
+
+const form = document.querySelector('form');
+
+if (form) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+    const subject = encodeURIComponent(form.subject.value);
+    const body = encodeURIComponent(form.message.value);
+    const url = `mailto:lisusan1104@gmail.com?subject=${subject}&body=${body}`;
+    location.href = url;
+  });
+}
+
