@@ -207,3 +207,24 @@ li {
   flex: 3 1 600px;
   min-width: 0;
 }
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  text-align: center;
+}
+
+dt {
+  grid-row: 1;
+  /* font-weight: bold; */
+  color: #a9acae; 
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+dd {
+  grid-row: 2;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
