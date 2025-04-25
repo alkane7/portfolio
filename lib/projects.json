@@ -2,13 +2,13 @@
     {
         "title": "Data Visualization Project 1",
         "year": "2025",
-        "image": "images/dv_proj1.png",
+        "image": "https://alkane7.github.io/portfolio/images/dv_proj1.png",
         "description": "Shelf Life: How processing impacts protein content."
     },
     {
         "title": "Data Visualization Project 2",
         "year": "2025",
-        "image": "images/dv_proj2_checkpoint.png",
+        "image": "https://alkane7.github.io/portfolio/images/dv_proj2_checkpoint.png",
         "description": "Wealthy nations are leading the fight against climate change by reducing emissions and funding green projects."
     },
     {
