@@ -228,3 +228,10 @@ dd {
   font-weight: 600;
 }
 
+.projects article img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+

@@ -1,21 +1,21 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "Data Visualization Project 1",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt optio maiores excepturi atque aut molestias delectus earum harum iste corrupti veritatis, deserunt, vero et quibusdam animi, commodi odit autem."
+        "image": "../images/dv_proj1.png",
+        "description": "Shelf Life: How processing impacts protein content."
     },
     {
-        "title": "Saepe facilis culpa et!",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Omnis aut corporis accusantium saepe, voluptatum incidunt eveniet aliquam aspernatur ex veritatis sed dolore delectus voluptatibus, earum nobis recusandae deleniti hic ipsam. Sunt incidunt illum dolores sed nisi accusamus laudantium?"
+        "title": "Data Visualization Project 2",
+        "year": "2025",
+        "image": "../images/dv_proj2_checkpoint.png",
+        "description": "Wealthy nations are leading the fight against climate change by reducing emissions and funding green projects."
     },
     {
-        "title": "Rerum aliquam necessitatibus quas!",
-        "year": "2024",
+        "title": "Snake MoonBit",
+        "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Enim rerum soluta magni aspernatur repudiandae minima natus quasi, cum dicta neque voluptatem repellat delectus, velit qui aliquid, nam sed a deserunt? Eum ipsa debitis adipisci commodi est sunt officia?"
+        "description": "Snake game built in MoonBit, a new programming language developed by IDEA(International Digital Economy Academy)"
     },
     {
         "title": "Magni itaque alias ipsam!",
