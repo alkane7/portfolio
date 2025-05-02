@@ -121,9 +121,11 @@ form button {
 
 
 .projects article {
-  display: grid;
+  /* display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 3; */
+  display: grid;
+  grid-template-rows: auto auto auto auto;
   background: color-mix(in oklch, var(--color-accent), canvas 75%);
   padding: 1em;
   border-radius: 0.5em;
@@ -234,4 +236,17 @@ dd {
   display: block;
 }
 
+.year {
+  font-style: italic;
+  font-family: "Baskerville", "Georgia", serif;
+  font-variant-numeric: oldstyle-nums;
+  font-size: 0.9em;
+  color: #444; /* 可根据你主题调整色调 */
+  margin-top: 0.5em;
+}
 
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
