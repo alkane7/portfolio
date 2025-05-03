@@ -241,12 +241,79 @@ dd {
   font-family: "Baskerville", "Georgia", serif;
   font-variant-numeric: oldstyle-nums;
   font-size: 0.9em;
-  color: #444; /* 可根据你主题调整色调 */
+  color: #444; 
   margin-top: 0.5em;
 }
 
-#projects-pie-plot {
+#projects-plot {
   max-width: 20em;
   margin-block: 2em;
   overflow: visible;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 0.25em 1em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-block: 1.5em;
+  font-family: system-ui, sans-serif;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend-item .swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.25em;
+  background-color: var(--color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; 
+  margin-block: 2rem;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+.legend {
+  flex: 1;
+}
+
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.3;
+}
+
+svg path {
+  transition: 300ms;
+}
+
+
+
+path {
+  cursor: pointer;
+  transition: fill 300ms;
+}
+
+.selected {
+  --color: oklch(0.58 0.1283 137.12) !important;
+}
+
+path.selected {
+  fill: var(--color);
+}
+
+.legend-item.selected .swatch {
+  background-color: var(--color);
 }
