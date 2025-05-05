@@ -24,6 +24,7 @@ let pages = [
   { url: 'contact/', title: 'Contact' },
   { url: 'https://github.com/alkane7', title: 'Profile' },
   { url: 'cv/', title: 'CV' },
+  { url: 'meta/', title: 'Meta' },
 ];
 
 let nav = document.createElement('nav');
