@@ -317,3 +317,94 @@ path.selected {
 .legend-item.selected .swatch {
   background-color: var(--color);
 }
+
+.stats {
+  margin: 2em 0;
+}
+
+.stats dt {
+  font-weight: bold;
+}
+
+.stats dd {
+  margin: 0 0 1em 1em;
+}
+
+/* .gridlines line {
+  stroke: #ccc;
+  stroke-opacity: 0.3;
+  shape-rendering: crispEdges;
+} */
+
+.gridlines path {
+  display: none;
+}
+
+dl.info.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3em 0.6em;
+  padding: 1em 1.2em;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-size: 0.85em;
+  line-height: 1.4;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  max-width: 300px;
+  z-index: 1000;
+}
+
+dl.info.tooltip[hidden] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info.tooltip dt {
+  font-weight: bold;
+  color: #444;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+dl.info.tooltip dd {
+  margin: 0;
+  color: #222;
+  font-size: 0.8em;
+  word-break: break-word;
+}
+
+#commit-link {
+  color: #1a73e8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#commit-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+
+
