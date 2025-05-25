@@ -318,17 +318,28 @@ path.selected {
   background-color: var(--color);
 }
 
-.stats {
-  margin: 2em 0;
+#stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr)); /* 响应式列 */
+  column-gap: 2rem;
+  row-gap: 0.25rem;
+  text-align: center;
+  margin-block: 1.5rem;
 }
 
-.stats dt {
+#stats dt {
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #a9acae;
 }
 
-.stats dd {
-  margin: 0 0 1em 1em;
+#stats dd {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
 }
+
 
 /* .gridlines line {
   stroke: #ccc;
@@ -406,5 +417,108 @@ circle.selected {
   fill: #ff6b6b;
 }
 
+.commit-slider-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.slider-row label {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.slider-row input[type="range"] {
+  flex: 1;
+}
+
+.commit-slider-wrapper time {
+  display: block;
+  text-align: right;
+  margin-top: 0.5em;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+circle {
+  transition: r 0.5s ease, fill-opacity 0.3s ease;
+}
+
+@starting-style {
+  circle {
+    r: 0;
+  }
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1em; /* 推荐加间距，防止太拥挤 */
+
+  > div {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;  /* ✅ 关键修改 */
+    grid-column: 1 / -1;
+  }
+
+  dt {
+    grid-column: 1;
+    grid-row: span 3;  /* ✅ 对齐文本和 code 结构 */
+    margin: 0;         /* ✅ 避免段落高度不一致 */
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    /* padding-top: 0.6em; */
+    margin-left: 0;
+  }
+
+  dt small {
+    display: block;
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 0.1em;
+  }  
+  
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+}
 
 
